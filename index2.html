@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bangun Datar</title>
+	<script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			user-select: none;
+			box-sizing: border-box;
+			font-family: 'GILL sans', 'GILL Sans MT', Calibri, 'Trebuchet MS';	
+			}
+		.sidebar {
+			position: fixed;
+			width: 260px;
+			height: 100%;
+			left: -260px;
+			background: #1b1b1b;
+		}
+		.sidebar .text {
+			color: white;
+			font-size: 25px;
+			font-weight: 600;
+			line-height: 40px;
+			text-align: center;
+			background: #1e1e1e;
+			letter-spacing: 1px;
+		}
+		nav ul {
+			background: #1b1b1b;
+			height: 100%;
+			width: 100%;
+			list-style: none;
+		}
+		nav ul li {
+			line-height: 45px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		}
+		nav ul li a {
+			color: white;
+			text-decoration: none;
+			font-size: 18px;
+			padding-left: 40px;
+			font-weight: 500;
+			display: block;
+			width: 100%;
+			border-left: 3px solid transparent;
+		}
+		nav ul li a:hover {
+			color: pink;
+			background: #1e1e1e;
+			border-left-color: lightpink;
+		}
+		nav ul ul {
+			position: static;
+			display: none;
+		}
+		nav ul ul li {
+			line-height: 45px;
+			border-bottom: none;
+		}
+		nav ul ul li a {
+			font-size: 17px;
+			color: #e6e6e6;
+			padding-left: 80px;
+		}
+		.sidebar ul li .dropdown{
+			display: none;
+		}
+		.sidebar ul li:hover .dropdown {
+			display: block;
+			background: black;
+			position: absolute;
+			padding: 0px;
+
+		}
+
+	.menu ul li:hover .dropdown li {
+		display: block;
+	}
+	.active {
+
+	}
+	#check {
+		display: none;
+
+	}
+	label #btn, label #cancel {
+		position: absolute;
+		height: 50px;
+		width: 45px;
+		cursor: pointer;
+		font-size: 27px;
+		text-align: center;
+		line-height: 45px;
+		color: white;
+		margin: 5px 30px;
+		border: 5px solid black;
+		border-radius: 5px;
+		background: black;
+		transition: all .5s ease;
+	}
+	label #cancel {
+		opacity: 0;
+		visibility: hidden;
+	}
+	#check:checked ~ .sidebar {
+		left: 0;
+	}
+	#check:checkedc~ label #btn {
+		margin-left: 265px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#check:checked ~ label #cancel {
+		margin-left: 265px;
+		opacity: 1;
+		visibility: visible;
+	}
+	.text {
+	margin: 25px;
+	margin-top: 0;
+		}
+		.a {
+			margin-left: 25px;
+		}
+	</style>
+</head>
+<body class="text">
+	<input type="checkbox" id="check">
+	<label for="check">
+		<i class="fas fa-bars" id="btn"></i>
+		<i class="fas fa-times" id="cancel"></i>
+	</label>
+
+	<nav class="sidebar">
+		<div class="text">GARIS DAN SUDUT</div>
+		<ul>
+			<li class="active"><a href="katapengantar.html">Kata Pengantar</a></li>
+			<li><a href="Pendahuluan.html">Pendahuluan</a></li>
+			<li><a href="materi1.html">Titik dan Garis</a></li>
+			<li><a href="materi2.html">Sudut</a></li>
+			<li><a href="materi3.html">Hubungan Garis dan Sudut</a></li>
+			<li><a href="materi4.html">Menghitung Jumlah Besar Sudut Pada Segi-n</a></li>
+			<li><a href="daftarpustaka.html">Daftar Pustaka</a></li>
+			<li><a href="appletgeogebra.html">Applet Geogebra</a></li>
+			<li><a href="videopembelajaran.html">Video Pembelajaran</a></li>
+			<li><a href="biografi.html">Profil Penulis</a></li>
+		</ul>
+	</nav>
+	<br>
+	<h1 style="text-align:center ;">GARIS DAN SUDUT</h1>
+    <tr>
+        <center>
+            <td rowspan="7"><img src="image000.jpeg"style float : center, width="60%"></img></td>
+        </center>
+    </tr>
+    <h3 style="text-align: center;">Zakiya Amalia Hartanto Putri</h1>
+    <h3 style="text-align: center;">Aan Hendrayana</h1>
+    <h3 style="text-align: center;">UNTIRTA PRESS</h1>
+</body>
+</html>
